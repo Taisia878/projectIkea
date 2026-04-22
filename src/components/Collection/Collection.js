@@ -29,7 +29,9 @@ function Collection() {
           >
             <div className="collection__overlay">
               <span>{item.title}</span>
-              <div className="collection__icon">▶</div>
+              <div className="collection__icon">
+                <img src="/arrow.png" alt="arrow" />
+              </div>
             </div>
           </div>
         ))}
@@ -40,7 +42,9 @@ function Collection() {
         style={{ backgroundImage: `url(${items[2].image})` }}
       >
         <div className="collection__side">
-          <div className="collection__icon">▶</div>
+          <div className="collection__icon">
+            <img src="/arrow.png" alt="arrow" />
+          </div>
         </div>
       </div>
     </section>

@@ -12,7 +12,7 @@ function New() {
   return (
     <section className="new">
       <h2 className="new__title">НОВИНКИ</h2>
-      
+
       <div className="new__container">
         {newItems.map((item, index) => (
           <div
