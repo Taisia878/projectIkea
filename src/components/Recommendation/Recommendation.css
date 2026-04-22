@@ -1,61 +1,102 @@
 .recommendation {
-    padding: 40px 80px;
-    font-family: sans-serif;
+  padding: 40px 80px;
+  font-family: sans-serif;
+  margin-left: 8%;
+  margin-right: 8%;
+}
+
+.recommendation__title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 24px;
+  letter-spacing: 1px;
+}
+
+.recommendation__container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.recommendation__track {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  width: 100%;
+}
+
+.recommendation__track::-webkit-scrollbar {
+  display: none;
+}
+
+.recommendation__card {
+  flex: 0 0 200px;
+  height: 280px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 20px;
+}
+
+.recommendation__label {
+  background-color: white;
+  padding: 8px 20px;
+  border-radius: 25px;
+  font-size: 12px;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.recommendation__arrow {
+  position: absolute;
+  width: 38px;
+  height: 38px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.recommendation__arrow img {
+  width: 38px;
+  height: 38px;
+}
+
+.recommendation__arrow.left {
+  left: -20px;
+}
+
+.recommendation__arrow {
+  right: -20px;
+}
+
+@media (max-width: 768px) {
+  .recommendation {
+    padding: 20px;
   }
-  
-  .recommendation__title {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 24px;
-    letter-spacing: 1px;
-  }
-  
-  .recommendation__container {
-    position: relative;
-    display: flex;
-    align-items: center;
-  }
-  
-  .recommendation__track {
-    display: flex;
-    gap: 20px;
-    overflow: hidden;
-    width: 100%;
-  }
-  
+
   .recommendation__card {
-    flex: 0 0 200px; 
-    height: 280px;
-    background-size: cover;
-    background-position: center;
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    padding-bottom: 20px;
+    flex: 0 0 140px;
+    height: 200px;
   }
-  
-  .recommendation__label {
-    background-color: white;
-    padding: 8px 20px;
-    border-radius: 25px;
-    font-size: 12px;
-    font-weight: bold;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  }
-  
+
   .recommendation__arrow {
-    position: absolute;
-    right: -20px;
-    width: 44px;
-    height: 44px;
-    background-color: black;
-    color: white;
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    width: 36px;
+    height: 36px;
   }
+
+  .recommendation__arrow.left {
+    left: -10px;
+  }
+
+  .recommendation__arrow.right {
+    right: -10px;
+  }
+}
